@@ -1,0 +1,14 @@
+data:
+  input_path: dataset/mentalhealth_dataset.csv
+  labeled_data_path: dataset/labeled_data.csv
+  output_path: data/processed/processed_data.csv
+  embeddings_path: data/embeddings/bert_embeddings.npy
+model:
+  electra_model: google/electra-small-discriminator
+  finetuned_electra_path: models/finetuned/electra-finetuned
+  sarcasm_model: cardiffnlp/bertweet-base-irony
+  sentence_transformer: all-MiniLM-L6-v2
+hdbscan:
+  min_cluster_size: 2  # Lowered for small datasets
+  min_samples: 1
+  cluster_selection_epsilon: 0.5  # Added to control cluster density

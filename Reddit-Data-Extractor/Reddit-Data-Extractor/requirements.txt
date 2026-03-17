@@ -1,0 +1,19 @@
+# Core ML & Data Libraries
+torch
+transformers
+accelerate
+datasets
+scikit-learn
+pandas
+numpy
+
+# Reddit API
+praw
+
+# Streamlit UI
+streamlit
+
+# Other important packages
+textblob
+seaborn
+matplotlib
